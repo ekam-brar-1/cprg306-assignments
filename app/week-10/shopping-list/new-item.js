@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function NewItem({ handleAdditem }) {
+export default function NewItem({ handleAddItem }) {
   const [quantity, setquantity] = useState(1);
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
@@ -13,7 +13,7 @@ export default function NewItem({ handleAdditem }) {
       category: category,
       quantity: quantity,
     };
-    handleAdditem(item);
+    handleAddItem(item);
     setCategory("Produce");
     setName("");
     setquantity(1);
@@ -38,7 +38,7 @@ export default function NewItem({ handleAdditem }) {
   return (
     <div className="border-2 border-gray-900 my-2 p-2 rounded-lg flex flex-col items-center">
       <form className="flex">
-        <label id="name">
+        <label for="name">
           Name:
           <input
             className="m-2 border-2 p-2 hover:bg-gray-200 border-gray-900 rounded-lg"

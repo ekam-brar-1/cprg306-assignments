@@ -29,7 +29,7 @@ export default function App() {
       {user ? <p>Logged in as {user.displayName}</p> : <p>Not logged in</p>}
       {user ? (
         <div>
-          <Link href="/week-9/shopping-list">Shopping list</Link>
+          <Link href="/week-10/shopping-list">Shopping list</Link>
         </div>
       ) : null}
     </div>
