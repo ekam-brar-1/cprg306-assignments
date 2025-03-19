@@ -5,7 +5,7 @@ export default function App() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
   return (
     <div>
-      <h1>Week 9</h1>
+      <h1>Week 10</h1>
       {user ? (
         <button
           onClick={() => {
@@ -29,7 +29,12 @@ export default function App() {
       {user ? <p>Logged in as {user.displayName}</p> : <p>Not logged in</p>}
       {user ? (
         <div>
-          <Link href="/week-10/shopping-list">Shopping list</Link>
+          <Link
+            className="flex  bg-black text-white p-2 rounded-lg "
+            href="/week-10/shopping-list"
+          >
+            Shopping list
+          </Link>
         </div>
       ) : null}
     </div>
